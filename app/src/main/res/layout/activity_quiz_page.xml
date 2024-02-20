@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="20dp">
+
+    <!-- Top section-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/close_rel">
+        <ImageButton
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:background="@drawable/color_stroke"
+            android:contentDescription="@string/close_button"
+            android:src="@drawable/close"
+            android:id="@+id/close_btn" />
+
+        <!-- Progress Bar-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="34dp"
+            android:layout_toEndOf="@id/close_btn"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/color_stroke">
+
+            <ProgressBar
+                android:id="@+id/progress_bar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="0dp"
+                android:layout_height="10dp"
+                android:layout_margin="10dp"
+                android:layout_weight="2"
+                android:layout_gravity="center_vertical"
+                android:progressDrawable="@drawable/custom_progress_bg"/>
+
+            <TextView
+                android:id="@+id/quiz_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:text="@string/_0_10"
+                android:textSize="12sp"
+                android:layout_marginEnd="10dp"
+                android:layout_gravity="center_vertical"/>
+
+        </LinearLayout>
+        <!-- End Of Progress Bar-->
+
+    </RelativeLayout>
+    <!-- End of top section-->
+
+    <!-- question section-->
+    <RelativeLayout
+        android:id="@+id/quiz_sec_rel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <TextView
+            android:id="@+id/quiz_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/question_card"
+            android:gravity="center"
+            android:text="what is the most popular sport\nthroughout the world?"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:paddingTop="50dp"
+            android:paddingBottom="50dp"
+            android:backgroundTint="@color/neutral_color"/>
+
+        <RadioGroup
+            android:id="@+id/radio_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/quiz_card"
+            android:layout_marginTop="30dp">
+
+            <RadioButton
+                android:id="@+id/r_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/question_card"
+                android:text="Football"
+                android:button="@null"
+                android:padding="15dp"
+                android:backgroundTint="@color/neutral_color"/>
+
+            <RadioButton
+                android:id="@+id/r_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/question_card"
+                android:text="Basketball"
+                android:button="@null"
+                android:padding="15dp"
+                android:backgroundTint="@color/neutral_color"/>
+
+            <RadioButton
+                android:id="@+id/r_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/question_card"
+                android:text="Cricket"
+                android:button="@null"
+                android:padding="15dp"
+                android:backgroundTint="@color/neutral_color"/>
+            <RadioButton
+                android:id="@+id/r_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/question_card"
+                android:text="Baseball"
+                android:button="@null"
+                android:padding="15dp"
+                android:backgroundTint="@color/neutral_color"/>
+        </RadioGroup>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/radio_group"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/question_card"
+            android:backgroundTint="@color/primary_color"
+            android:text="@string/next"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:id="@+id/next_btn"/>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:padding="20dp"
+    android:background="#fff">
+
+    <RelativeLayout
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        tools:ignore="UselessParent">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="@string/logo"
+            android:src="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/full_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/logo"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="50dp"
+            android:text="@string/full_name"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/full_name_view"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/full_text_view"
+            android:layout_marginTop="10dp"
+            android:autofillHints="name"
+            android:background="@drawable/edit_text_background"
+            android:gravity="center_vertical"
+            android:hint="@string/john_doe"
+            android:inputType="text"
+            android:paddingStart="10dp"
+            android:paddingLeft="10dp"
+            android:paddingEnd="10dp"
+            android:paddingRight="10dp" />
+
+        <TextView
+            android:id="@+id/email_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/full_name_view"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="15dp"
+            android:text="@string/email"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/email_view"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/email_text_view"
+            android:layout_marginTop="10dp"
+            android:autofillHints="emailAddress"
+            android:background="@drawable/edit_text_background"
+            android:gravity="center_vertical"
+            android:hint="John@doe.com"
+            android:inputType="textEmailAddress"
+            android:paddingStart="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            tools:ignore="HardcodedText,RtlSymmetry" />
+
+        <TextView
+            android:id="@+id/password_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/email_view"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="15dp"
+            android:text="@string/password"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/password_view"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/password_text_view"
+            android:layout_marginTop="10dp"
+            android:autofillHints="password"
+            android:background="@drawable/edit_text_background"
+            android:gravity="center_vertical"
+            android:hint="************"
+            android:inputType="textPassword"
+            android:paddingStart="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            tools:ignore="HardcodedText,RtlSymmetry" />
+
+        <TextView
+            android:id="@+id/error"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/password_view"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/auth_error_massage"
+            android:textColor="@color/secondary_color"
+            android:textSize="16sp"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/reg_btn"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_below="@+id/error"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edit_text_background"
+            android:backgroundTint="@color/primary_color"
+            android:text="@string/register"
+            android:textColor="#fff"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/already_member"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/reg_btn"
+            android:layout_marginTop="10dp"
+            android:text="@string/already_a_member"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/reg_btn"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@+id/already_member"
+            android:text="@string/login"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#3498DB"
+            android:id="@+id/login_tv"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

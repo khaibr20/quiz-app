@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Quizo</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login"><u>Login</u></string>
+    <string name="not_a_member_yet">Not a member yet?</string>
+    <string name="signup"><u>Register here</u></string>
+    <string name="quizzer">Quizzer</string>
+    <string name="which_quiz">Which quiz would you do today?</string>
+    <string name="close_button">Close button</string>
+    <string name="sport">Sport</string>
+    <string name="congrats_icon">Congrats Icon</string>
+    <string name="congrats">Congrats!!!</string>
+    <string name="you_have_scored">You have scored</string>
+    <string name="oops">Oops! Better luck next time.</string>
+    <string name="result">Result</string>
+    <string name="_0_10">0/10</string>
+    <string name="next">Next</string>
+    <string name="logo">Logo</string>
+    <string name="auth_error_massage">Incorrect email or password</string>
+    <string name="empty_field">One or more fields are empty</string>
+    <string name="full_name">Full Name</string>
+    <string name="register">Register</string>
+    <string name="already_a_member">Already a member</string>
+    <string name="john_doe_com">John@doe.com</string>
+    <string name="john_doe">John Doe</string>
+    <string name="login_btn">Login</string>
+    <string name="logout">Logout</string>
+</resources>
